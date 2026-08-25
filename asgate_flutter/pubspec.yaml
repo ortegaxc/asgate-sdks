@@ -1,0 +1,25 @@
+name: asgate_flutter
+description: >-
+  Flutter wrapper for the asgate enduser authentication SDK: secure token
+  storage (Keychain/Keystore) and app lifecycle integration.
+version: 0.1.0+1
+homepage: https://github.com/ortegaxc/asgate_flutter
+publish_to: none
+
+environment:
+  sdk: ^3.9.0
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  asgate:
+    path: ../asgate
+  app_links: ^6.3.2
+  flutter_secure_storage: ^9.2.2
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
