@@ -1,0 +1,50 @@
+{
+  "name": "asgate-js",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the asgate (ms-auth) enduser authentication API (Client API). Handles sessions, token refresh, email/phone verification, password and email changes, magic links, recovery, invitations, MFA and OIDC. Feature scope identical to the Dart/Flutter SDK (asgate / asgate_flutter).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src test",
+    "format": "prettier --write src test",
+    "attw": "attw --pack ."
+  },
+  "keywords": [
+    "auth",
+    "asgate",
+    "ms-auth",
+    "sdk",
+    "mfa",
+    "oidc"
+  ],
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.4",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0",
+    "vitest": "^2.0.5"
+  }
+}
